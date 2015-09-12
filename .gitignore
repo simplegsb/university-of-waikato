@@ -1,6 +1,6 @@
 # JetBrains
 #########################
+.idea
+*.iml
 out
-tasks.xml
-workspace.xml
 
