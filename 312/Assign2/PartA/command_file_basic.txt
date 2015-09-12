@@ -1,0 +1,12 @@
+Insert,	12345678,	Jackson,	Archer,	1984.txt
+Insert,	12348765,	Charlie,	Tucker,	Farewell_Arms.txt
+Insert, 12345555,	Joe,	Mayweather,	Macbeth.txt
+Insert, 12355678,	Malcolm,	Reed,	Animal_Farm.txt
+Insert,	12358765,	Hoshi,	Sato,	Street_Car_Desire.txt
+Insert,	12354444,	T, Pau,		Quiet_Western_Front.txt
+Search, FirstName,	Charlie
+Search, studentID,	12345678
+Search, LastName,	Pau
+Search, AssignmentFileName, 1984.txt
+Retrieve, 12358765
+Retrieve, 12345555
