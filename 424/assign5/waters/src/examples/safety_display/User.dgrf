@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE graph PUBLIC "vgraph" "vgraph.dtd">
+<graph name="User" version="1.0" valid="1"
+	hasGeometry="1" width="130" height="105"
+	generatorName="DGE" generatorVersion="2.7.9"
+	creationDate="2001-06-19 08:08:56 GMT" modificationDate="2001-06-19 08:08:56 GMT">
+	<events>
+		<event controllable="0" name="switchoff.1"/>
+		<event controllable="0" name="switchoff.2"/>
+		<event controllable="0" name="switchoff.3"/>
+		<event controllable="0" name="switchon.1"/>
+		<event controllable="0" name="switchon.2"/>
+		<event controllable="0" name="switchon.3"/>
+	</events>
+	<nodes>
+		<node initial="1">
+			<rendering><point x="264" y="167"/></rendering>
+			<label name="s0">
+				<rendering><point x="-8" y="24"/></rendering>
+			</label>
+		</node>
+	</nodes>
+	<edges>
+		<edge isLoop="1">
+			<rendering><point x="296" y="137"/></rendering>
+			<source name="s0"/>
+			<labelGroup>
+				<rendering><point x="20" y="-24"/></rendering>
+				<label name="switchon.1"/>
+				<label name="switchoff.1">
+					<rendering><point x="0" y="16"/></rendering>
+				</label>
+				<label name="switchoff.2">
+					<rendering><point x="0" y="32"/></rendering>
+				</label>
+				<label name="switchon.2">
+					<rendering><point x="0" y="48"/></rendering>
+				</label>
+				<label name="switchon.3">
+					<rendering><point x="0" y="64"/></rendering>
+				</label>
+				<label name="switchoff.3">
+					<rendering><point x="0" y="80"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+	</edges>
+</graph>

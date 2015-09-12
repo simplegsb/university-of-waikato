@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE graph PUBLIC "vgraph" "vgraph.dtd">
+<graph name="comfort" version="1.0" valid="1"
+	hasGeometry="1" width="605" height="472"
+	generatorName="DGE" generatorVersion="2.9b2"
+	creationDate="2005-05-08 02:12:04 GMT" modificationDate="2005-05-08 02:12:04 GMT">
+	<events>
+		<event controllable="1" name="CMFT_BACK.FUNC"/>
+		<event controllable="1" name="cmft_cond_doors"/>
+		<event controllable="1" name="cmft_cond_key"/>
+		<event controllable="1" name="CMFT_FRONT.FUNC"/>
+		<event controllable="1" name="CMFT_ROOF.FUNC"/>
+		<event controllable="1" name="cmft_start"/>
+		<event controllable="0" name="REQ.FUNC"/>
+		<event controllable="0" name="REQ.STOP"/>
+		<event controllable="1" name="reset"/>
+		<event controllable="0" name="timeout"/>
+		<event controllable="1" name="timer"/>
+	</events>
+	<nodes>
+		<node>
+			<rendering><point x="544" y="432"/></rendering>
+			<label name="timeout">
+				<rendering><point x="15" y="3"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="464" y="512"/></rendering>
+			<label name="start">
+				<rendering><point x="13" y="4"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="96" y="400"/></rendering>
+			<label name="front">
+				<rendering><point x="-40" y="4"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="336" y="544"/></rendering>
+			<label name="back">
+				<rendering><point x="-12" y="20"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="80" y="304"/></rendering>
+			<label name="timer_roof">
+				<rendering><point x="-69" y="4"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="560" y="304"/></rendering>
+			<label name="timer">
+				<rendering><point x="13" y="7"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="160" y="112"/></rendering>
+			<label name="roof">
+				<rendering><point x="-44" y="0"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="144" y="480"/></rendering>
+			<label name="timeout_front">
+				<rendering><point x="-82" y="16"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="224" y="528"/></rendering>
+			<label name="timer_front">
+				<rendering><point x="-37" y="24"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="96" y="208"/></rendering>
+			<label name="timeout_roof">
+				<rendering><point x="-84" y="1"/></rendering>
+			</label>
+		</node>
+		<node initial="1" marked="1">
+			<rendering><point x="336" y="288"/></rendering>
+			<label name="init">
+				<rendering><point x="-4" y="-21"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="528" y="176"/></rendering>
+			<label name="request">
+				<rendering><point x="14" y="9"/></rendering>
+			</label>
+		</node>
+	</nodes>
+	<edges>
+		<edge>
+			<rendering><point x="203" y="225"/></rendering>
+			<source name="timeout_roof"/>
+			<target name="init"/>
+			<labelGroup>
+				<rendering><point x="-52" y="-17"/></rendering>
+				<label name="REQ.STOP"/>
+				<label name="cmft_cond_doors">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="cmft_cond_key">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="timeout_roof"/>
+			<target name="roof"/>
+			<labelGroup>
+				<rendering><point x="-107" y="-14"/></rendering>
+				<label name="CMFT_ROOF.FUNC"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="back"/>
+			<target name="timer_front"/>
+			<labelGroup>
+				<rendering><point x="-12" y="20"/></rendering>
+				<label name="timer"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="301" y="432"/></rendering>
+			<source name="back"/>
+			<target name="init"/>
+			<labelGroup>
+				<rendering><point x="-8" y="55"/></rendering>
+				<label name="REQ.STOP"/>
+				<label name="cmft_cond_doors">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="cmft_cond_key">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="183" y="332"/></rendering>
+			<source name="front"/>
+			<target name="init"/>
+			<labelGroup>
+				<rendering><point x="-48" y="-1"/></rendering>
+				<label name="REQ.STOP"/>
+				<label name="cmft_cond_doors">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="cmft_cond_key">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="front"/>
+			<target name="timer_roof"/>
+			<labelGroup>
+				<rendering><point x="-39" y="10"/></rendering>
+				<label name="timer"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="254" y="157"/></rendering>
+			<source name="roof"/>
+			<target name="init"/>
+			<labelGroup>
+				<rendering><point x="-68" y="-25"/></rendering>
+				<label name="REQ.STOP"/>
+				<label name="cmft_cond_doors">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="cmft_cond_key">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="start"/>
+			<target name="back"/>
+			<labelGroup>
+				<rendering><point x="0" y="24"/></rendering>
+				<label name="CMFT_BACK.FUNC"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="378" y="423"/></rendering>
+			<source name="start"/>
+			<target name="init"/>
+			<labelGroup>
+				<rendering><point x="-5" y="17"/></rendering>
+				<label name="REQ.STOP"/>
+				<label name="cmft_cond_doors">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="cmft_cond_key">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="442" y="333"/></rendering>
+			<source name="timer"/>
+			<target name="init"/>
+			<labelGroup>
+				<rendering><point x="-12" y="-14"/></rendering>
+				<label name="REQ.STOP"/>
+				<label name="cmft_cond_doors">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="cmft_cond_key">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="timer"/>
+			<target name="timeout"/>
+			<labelGroup>
+				<rendering><point x="9" y="1"/></rendering>
+				<label name="timeout"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="445" y="257"/></rendering>
+			<source name="request"/>
+			<target name="init"/>
+			<labelGroup>
+				<rendering><point x="-34" y="0"/></rendering>
+				<label name="REQ.STOP"/>
+				<label name="cmft_cond_doors">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="cmft_cond_key">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge isLoop="1">
+			<rendering><point x="546" y="142"/></rendering>
+			<source name="request"/>
+			<labelGroup>
+				<rendering><point x="-67" y="-18"/></rendering>
+				<label name="timeout"/>
+				<label name="reset">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="request"/>
+			<target name="timer"/>
+			<labelGroup>
+				<rendering><point x="9" y="2"/></rendering>
+				<label name="timer"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="251" y="405"/></rendering>
+			<source name="timer_front"/>
+			<target name="init"/>
+			<labelGroup>
+				<rendering><point x="-50" y="42"/></rendering>
+				<label name="REQ.STOP"/>
+				<label name="cmft_cond_doors">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="cmft_cond_key">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="timer_front"/>
+			<target name="timeout_front"/>
+			<labelGroup>
+				<rendering><point x="-40" y="20"/></rendering>
+				<label name="timeout"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="timer_roof"/>
+			<target name="timeout_roof"/>
+			<labelGroup>
+				<rendering><point x="-58" y="-4"/></rendering>
+				<label name="timeout"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="185" y="280"/></rendering>
+			<source name="timer_roof"/>
+			<target name="init"/>
+			<labelGroup>
+				<rendering><point x="-53" y="-8"/></rendering>
+				<label name="REQ.STOP"/>
+				<label name="cmft_cond_doors">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="cmft_cond_key">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge isLoop="1">
+			<rendering><point x="337" y="249"/></rendering>
+			<source name="init"/>
+			<labelGroup>
+				<rendering><point x="-17" y="-106"/></rendering>
+				<label name="timeout"/>
+				<label name="reset">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="timer">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+				<label name="REQ.STOP">
+					<rendering><point x="0" y="45"/></rendering>
+				</label>
+				<label name="cmft_cond_doors">
+					<rendering><point x="0" y="60"/></rendering>
+				</label>
+				<label name="cmft_cond_key">
+					<rendering><point x="0" y="75"/></rendering>
+				</label>
+				<label name="cmft_start">
+					<rendering><point x="0" y="90"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="430" y="230"/></rendering>
+			<source name="init"/>
+			<target name="request"/>
+			<labelGroup>
+				<rendering><point x="-21" y="-31"/></rendering>
+				<label name="REQ.FUNC"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="420" y="391"/></rendering>
+			<source name="timeout"/>
+			<target name="init"/>
+			<labelGroup>
+				<rendering><point x="6" y="-7"/></rendering>
+				<label name="REQ.STOP"/>
+				<label name="cmft_cond_doors">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="cmft_cond_key">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="timeout"/>
+			<target name="start"/>
+			<labelGroup>
+				<rendering><point x="9" y="13"/></rendering>
+				<label name="cmft_start"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="207" y="380"/></rendering>
+			<source name="timeout_front"/>
+			<target name="init"/>
+			<labelGroup>
+				<rendering><point x="-43" y="9"/></rendering>
+				<label name="REQ.STOP"/>
+				<label name="cmft_cond_doors">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="cmft_cond_key">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="timeout_front"/>
+			<target name="front"/>
+			<labelGroup>
+				<rendering><point x="-108" y="23"/></rendering>
+				<label name="CMFT_FRONT.FUNC"/>
+			</labelGroup>
+		</edge>
+	</edges>
+</graph>

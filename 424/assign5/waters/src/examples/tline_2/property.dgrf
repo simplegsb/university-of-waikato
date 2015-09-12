@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE graph PUBLIC "vgraph" "vgraph.dtd">
+<graph name="property" version="1.0" valid="1"
+	hasGeometry="1" width="130" height="96"
+	generatorName="DGE" generatorVersion="2.7.10"
+	creationDate="2002-05-28 14:31:20 GMT" modificationDate="2002-05-28 14:43:18 GMT">
+	<events>
+		<event controllable="0" name="machine_unload.1"/>
+		<event controllable="0" name="tu_accept.1"/>
+		<event controllable="0" name="tu_reject.1"/>
+	</events>
+	<nodes>
+		<node marked="1">
+			<rendering><point x="176" y="112"/></rendering>
+			<label name="s1">
+				<rendering><point x="-8" y="24"/></rendering>
+			</label>
+		</node>
+		<node initial="1" marked="1">
+			<rendering><point x="80" y="112"/></rendering>
+			<label name="s0">
+				<rendering><point x="-8" y="24"/></rendering>
+			</label>
+		</node>
+	</nodes>
+	<edges>
+		<edge>
+			<rendering><point x="129" y="96"/></rendering>
+			<source name="s0"/>
+			<target name="s1"/>
+			<labelGroup>
+				<rendering><point x="-41" y="-9"/></rendering>
+				<label name="machine_unload.1"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="127" y="129"/></rendering>
+			<source name="s1"/>
+			<target name="s0"/>
+			<labelGroup>
+				<rendering><point x="-25" y="13"/></rendering>
+				<label name="tu_accept.1"/>
+				<label name="tu_reject.1">
+					<rendering><point x="0" y="16"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+	</edges>
+</graph>

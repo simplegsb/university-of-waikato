@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE graph PUBLIC "vgraph" "vgraph.dtd">
+<graph name="field" version="1.0" valid="1"
+	hasGeometry="1" width="147" height="66"
+	generatorName="DGE" generatorVersion="2.9b2"
+	creationDate="2004-04-15 04:06:56 GMT" modificationDate="2004-04-15 04:23:39 GMT">
+	<events>
+		<event controllable="1" name="black.x.y"/>
+		<event controllable="0" name="draw"/>
+		<event controllable="0" name="white.x.y"/>
+	</events>
+	<nodes>
+		<node marked="1">
+			<rendering><point x="240" y="128"/></rendering>
+			<label name="full">
+				<rendering><point x="-7" y="24"/></rendering>
+			</label>
+		</node>
+		<node initial="1" marked="1">
+			<rendering><point x="160" y="128"/></rendering>
+			<label name="empty">
+				<rendering><point x="-17" y="22"/></rendering>
+			</label>
+		</node>
+	</nodes>
+	<edges>
+		<edge isLoop="1">
+			<rendering><point x="283" y="128"/></rendering>
+			<source name="full"/>
+			<labelGroup>
+				<rendering><point x="-33" y="-20"/></rendering>
+				<label name="draw"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="empty"/>
+			<target name="full"/>
+			<labelGroup>
+				<rendering><point x="-27" y="-20"/></rendering>
+				<label name="white.x.y"/>
+				<label name="black.x.y">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+	</edges>
+</graph>

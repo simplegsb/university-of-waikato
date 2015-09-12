@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE graph PUBLIC "vgraph" "vgraph.dtd">
+<graph name="black_dwin1" version="1.0" valid="1"
+	hasGeometry="1" width="343" height="228"
+	generatorName="DGE" generatorVersion="2.9b2"
+	creationDate="2004-04-15 04:15:49 GMT" modificationDate="2004-04-15 05:11:56 GMT">
+	<events>
+		<event controllable="1" name="black.0.0"/>
+		<event controllable="1" name="black.1.1"/>
+		<event controllable="1" name="black.2.2"/>
+		<event controllable="0" name="white.0.0"/>
+		<event controllable="0" name="white.0.1"/>
+		<event controllable="0" name="white.0.2"/>
+		<event controllable="0" name="white.1.0"/>
+		<event controllable="0" name="white.1.1"/>
+		<event controllable="0" name="white.1.2"/>
+		<event controllable="0" name="white.2.0"/>
+		<event controllable="0" name="white.2.1"/>
+		<event controllable="0" name="white.2.2"/>
+		<event controllable="0" name="winner_black_d1"/>
+	</events>
+	<nodes>
+		<node marked="1">
+			<rendering><point x="320" y="112"/></rendering>
+			<label name="s3">
+				<rendering><point x="-8" y="24"/></rendering>
+			</label>
+		</node>
+		<node marked="1">
+			<rendering><point x="240" y="112"/></rendering>
+			<label name="s2">
+				<rendering><point x="-8" y="24"/></rendering>
+			</label>
+		</node>
+		<node marked="1">
+			<rendering><point x="160" y="112"/></rendering>
+			<label name="s1">
+				<rendering><point x="-8" y="24"/></rendering>
+			</label>
+		</node>
+		<node initial="1" marked="1">
+			<rendering><point x="80" y="112"/></rendering>
+			<label name="s0">
+				<rendering><point x="-8" y="24"/></rendering>
+			</label>
+		</node>
+	</nodes>
+	<edges>
+		<edge isLoop="1">
+			<rendering><point x="159" y="148"/></rendering>
+			<source name="s1"/>
+			<labelGroup>
+				<rendering><point x="-26" y="14"/></rendering>
+				<label name="white.0.0"/>
+				<label name="white.0.1">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="white.0.2">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+				<label name="white.1.0">
+					<rendering><point x="0" y="45"/></rendering>
+				</label>
+				<label name="white.1.1">
+					<rendering><point x="0" y="60"/></rendering>
+				</label>
+				<label name="white.1.2">
+					<rendering><point x="0" y="75"/></rendering>
+				</label>
+				<label name="white.2.0">
+					<rendering><point x="0" y="90"/></rendering>
+				</label>
+				<label name="white.2.1">
+					<rendering><point x="0" y="105"/></rendering>
+				</label>
+				<label name="white.2.2">
+					<rendering><point x="0" y="120"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="s1"/>
+			<target name="s2"/>
+			<labelGroup>
+				<rendering><point x="-28" y="-34"/></rendering>
+				<label name="black.0.0"/>
+				<label name="black.1.1">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="black.2.2">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge isLoop="1">
+			<rendering><point x="320" y="148"/></rendering>
+			<source name="s3"/>
+			<labelGroup>
+				<rendering><point x="-35" y="10"/></rendering>
+				<label name="winner_black_d1"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="s2"/>
+			<target name="s3"/>
+			<labelGroup>
+				<rendering><point x="-27" y="-34"/></rendering>
+				<label name="black.0.0"/>
+				<label name="black.1.1">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="black.2.2">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge isLoop="1">
+			<rendering><point x="240" y="149"/></rendering>
+			<source name="s2"/>
+			<labelGroup>
+				<rendering><point x="-25" y="12"/></rendering>
+				<label name="white.0.0"/>
+				<label name="white.0.1">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="white.0.2">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+				<label name="white.1.0">
+					<rendering><point x="0" y="45"/></rendering>
+				</label>
+				<label name="white.1.1">
+					<rendering><point x="0" y="60"/></rendering>
+				</label>
+				<label name="white.1.2">
+					<rendering><point x="0" y="75"/></rendering>
+				</label>
+				<label name="white.2.0">
+					<rendering><point x="0" y="90"/></rendering>
+				</label>
+				<label name="white.2.1">
+					<rendering><point x="0" y="105"/></rendering>
+				</label>
+				<label name="white.2.2">
+					<rendering><point x="0" y="120"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="s0"/>
+			<target name="s1"/>
+			<labelGroup>
+				<rendering><point x="-29" y="-33"/></rendering>
+				<label name="black.0.0"/>
+				<label name="black.1.1">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="black.2.2">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+		<edge isLoop="1">
+			<rendering><point x="81" y="148"/></rendering>
+			<source name="s0"/>
+			<labelGroup>
+				<rendering><point x="-29" y="14"/></rendering>
+				<label name="white.0.0"/>
+				<label name="white.0.1">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="white.0.2">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+				<label name="white.1.0">
+					<rendering><point x="0" y="45"/></rendering>
+				</label>
+				<label name="white.1.1">
+					<rendering><point x="0" y="60"/></rendering>
+				</label>
+				<label name="white.1.2">
+					<rendering><point x="0" y="75"/></rendering>
+				</label>
+				<label name="white.2.0">
+					<rendering><point x="0" y="90"/></rendering>
+				</label>
+				<label name="white.2.1">
+					<rendering><point x="0" y="105"/></rendering>
+				</label>
+				<label name="white.2.2">
+					<rendering><point x="0" y="120"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+	</edges>
+</graph>

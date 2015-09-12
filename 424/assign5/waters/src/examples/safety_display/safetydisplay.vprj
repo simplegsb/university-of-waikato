@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project PUBLIC "project" "project.dtd">
+
+<project name="safetydisplay"
+         legacy="1"
+         generatorName="Dpr2Vmod"
+         generatorVersion="2.7"
+         version="1.0"
+         creationDate="2001-06-07 12:52:15 GMT"
+         modificationDate="2001-06-19 08:10:45 GMT">
+<uses module="safetydisplay_main"/>
+</project>

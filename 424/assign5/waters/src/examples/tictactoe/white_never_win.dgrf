@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE graph PUBLIC "vgraph" "vgraph.dtd">
+<graph name="white_never_win" version="1.0" valid="1"
+	hasGeometry="1" width="22" height="38"
+	generatorName="DGE" generatorVersion="2.9b2"
+	creationDate="2004-04-15 04:29:31 GMT" modificationDate="2004-04-15 04:30:51 GMT">
+	<events>
+		<event controllable="0" name="winner_white_d1"/>
+		<event controllable="0" name="winner_white_d2"/>
+		<event controllable="0" name="winner_white_x.0"/>
+		<event controllable="0" name="winner_white_x.1"/>
+		<event controllable="0" name="winner_white_x.2"/>
+		<event controllable="0" name="winner_white_y.0"/>
+		<event controllable="0" name="winner_white_y.1"/>
+		<event controllable="0" name="winner_white_y.2"/>
+	</events>
+	<nodes>
+		<node initial="1" marked="1">
+			<rendering><point x="48" y="48"/></rendering>
+			<label name="init">
+				<rendering><point x="-8" y="22"/></rendering>
+			</label>
+		</node>
+	</nodes>
+	<edges>
+	</edges>
+</graph>

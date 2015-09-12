@@ -1,0 +1,3 @@
+konqueror: ERROR: Error in BrowserExtension::actionSlotMap(), unknown action : searchProvider
+konqueror: ERROR: Error in BrowserExtension::actionSlotMap(), unknown action : searchProvider
+ICE default IO error handler doing an exit(), pid = 6702, errno = 32

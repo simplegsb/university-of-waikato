@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project PUBLIC "project" "project.dtd">
+
+<project name="debounce"
+         legacy="1"
+         generatorName="Dpr2Vmod"
+         generatorVersion="2.7b4"
+         version="1.0"
+         creationDate="2000-06-06 07:20:37 GMT"
+         modificationDate="2000-10-05 08:27:48 GMT">
+<uses module="debounce_main"/>
+</project>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE graph PUBLIC "vgraph" "vgraph.dtd">
+<graph name="lock" version="1.0" valid="1"
+	hasGeometry="1" width="202" height="213"
+	generatorName="DGE" generatorVersion="2.9b2"
+	creationDate="2005-05-08 02:12:04 GMT" modificationDate="2005-05-08 02:12:04 GMT">
+	<events>
+		<event controllable="0" name="KEY_PLUG"/>
+		<event controllable="0" name="KEY_UNPLUG"/>
+		<event controllable="0" name="KL_50_OFF"/>
+		<event controllable="0" name="KL_50_ON"/>
+		<event controllable="0" name="KL_R_OFF"/>
+		<event controllable="0" name="KL_R_ON"/>
+	</events>
+	<nodes>
+		<node>
+			<rendering><point x="176" y="176"/></rendering>
+			<label name="radio">
+				<rendering><point x="-42" y="5"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="176" y="240"/></rendering>
+			<label name="starter">
+				<rendering><point x="-50" y="4"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="176" y="112"/></rendering>
+			<label name="key">
+				<rendering><point x="-36" y="3"/></rendering>
+			</label>
+		</node>
+		<node initial="1" marked="1">
+			<rendering><point x="176" y="48"/></rendering>
+			<label name="no_key">
+				<rendering><point x="-54" y="4"/></rendering>
+			</label>
+		</node>
+	</nodes>
+	<edges>
+		<edge>
+			<rendering><point x="160" y="208"/></rendering>
+			<source name="starter"/>
+			<target name="radio"/>
+			<labelGroup>
+				<rendering><point x="-76" y="4"/></rendering>
+				<label name="KL_50_OFF"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="188" y="78"/></rendering>
+			<source name="no_key"/>
+			<target name="key"/>
+			<labelGroup>
+				<rendering><point x="8" y="4"/></rendering>
+				<label name="KEY_PLUG"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="192" y="209"/></rendering>
+			<source name="radio"/>
+			<target name="starter"/>
+			<labelGroup>
+				<rendering><point x="7" y="2"/></rendering>
+				<label name="KL_50_ON"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="160" y="144"/></rendering>
+			<source name="radio"/>
+			<target name="key"/>
+			<labelGroup>
+				<rendering><point x="-68" y="4"/></rendering>
+				<label name="KL_R_OFF"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="162" y="80"/></rendering>
+			<source name="key"/>
+			<target name="no_key"/>
+			<labelGroup>
+				<rendering><point x="-92" y="4"/></rendering>
+				<label name="KEY_UNPLUG"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="193" y="142"/></rendering>
+			<source name="key"/>
+			<target name="radio"/>
+			<labelGroup>
+				<rendering><point x="3" y="3"/></rendering>
+				<label name="KL_R_ON"/>
+			</labelGroup>
+		</edge>
+	</edges>
+</graph>

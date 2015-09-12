@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "module" "module.dtd">
+
+<module name="tictactoe_main"
+        legacy="1"
+        arity="0"
+        generatorName="VALID-II"
+        generatorVersion="2.9b2"
+        version="1.0"
+        creationDate="2004-04-15 16:01:47 GMT+12:00"
+        modificationDate="2004-05-06 14:24:13 GMT+12:00">
+<interface/>
+<definitions>
+<typeDefinition name="BOARD" expression="{0..2}"/>
+</definitions>
+<local>
+<event name="winner_white_x"
+       controllable="0"
+       arity="1">
+</event>
+<foreach-alias dummy="_0" range="{0..2}">
+<alias old="winner_white_x.$_0" new="winner_white_x[$_0]"/>
+</foreach-alias>
+<event name="winner_white_y"
+       controllable="0"
+       arity="1">
+</event>
+<foreach-alias dummy="_0" range="{0..2}">
+<alias old="winner_white_y.$_0" new="winner_white_y[$_0]"/>
+</foreach-alias>
+<event name="winner_white_d1"
+       controllable="0"
+       arity="0">
+</event>
+<event name="winner_white_d2"
+       controllable="0"
+       arity="0">
+</event>
+<event name="white"
+       controllable="0"
+       arity="2">
+</event>
+<foreach-alias dummy="_0" range="{0..2}">
+<foreach-alias dummy="_1" range="{0..2}">
+<alias old="white.$_0.$_1" new="white[$_0][$_1]"/>
+</foreach-alias>
+</foreach-alias>
+<event name="draw"
+       controllable="0"
+       arity="0">
+</event>
+<event name="winner_black_d1"
+       controllable="0"
+       arity="0">
+</event>
+<event name="winner_black_d2"
+       controllable="0"
+       arity="0">
+</event>
+<event name="black"
+       controllable="1"
+       arity="2">
+</event>
+<foreach-alias dummy="_0" range="{0..2}">
+<foreach-alias dummy="_1" range="{0..2}">
+<alias old="black.$_0.$_1" new="black[$_0][$_1]"/>
+</foreach-alias>
+</foreach-alias>
+<event name="winner_black_x"
+       controllable="0"
+       arity="1">
+</event>
+<foreach-alias dummy="_0" range="{0..2}">
+<alias old="winner_black_x.$_0" new="winner_black_x[$_0]"/>
+</foreach-alias>
+<event name="winner_black_y"
+       controllable="0"
+       arity="1">
+</event>
+<foreach-alias dummy="_0" range="{0..2}">
+<alias old="winner_black_y.$_0" new="winner_black_y[$_0]"/>
+</foreach-alias>
+</local>
+<parts>
+<component graph="white_never_win" kind="spec"/>
+<foreach-instance dummy="y" range="$BOARD">
+<instance name="black_ywin[$y]" module="black_ywin_plant">
+<nameParam name="black_0_y" value="black[0][$y]"/>
+<nameParam name="black_1_y" value="black[1][$y]"/>
+<nameParam name="black_2_y" value="black[2][$y]"/>
+<nameParam name="white_0_0" value="white[0][0]"/>
+<nameParam name="white_0_1" value="white[0][1]"/>
+<nameParam name="white_0_2" value="white[0][2]"/>
+<nameParam name="white_1_0" value="white[1][0]"/>
+<nameParam name="white_1_1" value="white[1][1]"/>
+<nameParam name="white_1_2" value="white[1][2]"/>
+<nameParam name="white_2_0" value="white[2][0]"/>
+<nameParam name="white_2_1" value="white[2][1]"/>
+<nameParam name="white_2_2" value="white[2][2]"/>
+<nameParam name="winner_black_y" value="winner_black_y[$y]"/>
+</instance>
+</foreach-instance>
+<component graph="game_over" kind="plant"/>
+<foreach-instance dummy="x" range="$BOARD">
+<instance name="white_xwin[$x]" module="white_xwin_plant">
+<nameParam name="white_x_0" value="white[$x][0]"/>
+<nameParam name="white_x_1" value="white[$x][1]"/>
+<nameParam name="white_x_2" value="white[$x][2]"/>
+<nameParam name="winner_white_x" value="winner_white_x[$x]"/>
+</instance>
+</foreach-instance>
+<component graph="white_dwin1" kind="plant"/>
+<component graph="white_dwin2" kind="plant"/>
+<foreach-instance dummy="x" range="$BOARD">
+<foreach-instance dummy="y" range="$BOARD">
+<instance name="field[$x][$y]" module="field_plant">
+<nameParam name="black" value="black[$x][$y]"/>
+<nameParam name="draw" value="draw"/>
+<nameParam name="white" value="white[$x][$y]"/>
+</instance>
+</foreach-instance>
+</foreach-instance>
+<component graph="move" kind="plant"/>
+<component graph="black_dwin1" kind="plant"/>
+<component graph="black_dwin2" kind="plant"/>
+<foreach-instance dummy="x" range="$BOARD">
+<instance name="black_xwin[$x]" module="black_xwin_plant">
+<nameParam name="black_x_0" value="black[$x][0]"/>
+<nameParam name="black_x_1" value="black[$x][1]"/>
+<nameParam name="black_x_2" value="black[$x][2]"/>
+<nameParam name="white_0_0" value="white[0][0]"/>
+<nameParam name="white_0_1" value="white[0][1]"/>
+<nameParam name="white_0_2" value="white[0][2]"/>
+<nameParam name="white_1_0" value="white[1][0]"/>
+<nameParam name="white_1_1" value="white[1][1]"/>
+<nameParam name="white_1_2" value="white[1][2]"/>
+<nameParam name="white_2_0" value="white[2][0]"/>
+<nameParam name="white_2_1" value="white[2][1]"/>
+<nameParam name="white_2_2" value="white[2][2]"/>
+<nameParam name="winner_black_x" value="winner_black_x[$x]"/>
+</instance>
+</foreach-instance>
+<foreach-instance dummy="y" range="$BOARD">
+<instance name="white_ywin[$y]" module="white_ywin_plant">
+<nameParam name="white_0_y" value="white[0][$y]"/>
+<nameParam name="white_1_y" value="white[1][$y]"/>
+<nameParam name="white_2_y" value="white[2][$y]"/>
+<nameParam name="winner_white_y" value="winner_white_y[$y]"/>
+</instance>
+</foreach-instance>
+</parts>
+</module>

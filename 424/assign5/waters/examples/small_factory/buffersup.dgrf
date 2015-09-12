@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE graph PUBLIC "vgraph" "vgraph.dtd">
+<graph name="buffersup" version="1.0" valid="1"
+	hasGeometry="1" width="141" height="70"
+	generatorName="DGE" generatorVersion="2.9b2"
+	creationDate="2005-05-08 02:32:36 GMT" modificationDate="2005-05-08 02:34:16 GMT">
+	<events>
+		<event controllable="0" name="finish1"/>
+		<event controllable="1" name="start1"/>
+		<event controllable="1" name="start2"/>
+	</events>
+	<nodes>
+		<node initial="1" marked="1">
+			<rendering><point x="112" y="144"/></rendering>
+			<label name="E">
+				<rendering><point x="-4" y="21"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="192" y="144"/></rendering>
+			<label name="F">
+				<rendering><point x="-4" y="21"/></rendering>
+			</label>
+		</node>
+	</nodes>
+	<edges>
+		<edge isLoop="1">
+			<rendering><point x="75" y="145"/></rendering>
+			<source name="E"/>
+			<labelGroup>
+				<rendering><point x="-9" y="-20"/></rendering>
+				<label name="start1"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="152" y="129"/></rendering>
+			<source name="E"/>
+			<target name="F"/>
+			<labelGroup>
+				<rendering><point x="-4" y="-3"/></rendering>
+				<label name="finish1"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="153" y="159"/></rendering>
+			<source name="F"/>
+			<target name="E"/>
+			<labelGroup>
+				<rendering><point x="-7" y="12"/></rendering>
+				<label name="start2"/>
+			</labelGroup>
+		</edge>
+	</edges>
+</graph>

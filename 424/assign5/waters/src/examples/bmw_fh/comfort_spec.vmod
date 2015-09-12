@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "module" "module.dtd">
+
+<module name="comfort_spec"
+        legacy="1"
+        arity="0"
+        generatorName="Dpr2Vmod"
+        generatorVersion="2.8"
+        version="1.0"
+        creationDate="2005-05-08 14:04:25 GMT+12:00"
+        modificationDate="2005-05-08 14:11:33 GMT+12:00">
+<interface>
+<event name="CMFT_BACK" controllable="1"/>
+<event name="cmft_cond_doors" controllable="1"/>
+<event name="cmft_cond_key" controllable="1"/>
+<event name="CMFT_FRONT" controllable="1"/>
+<event name="CMFT_ROOF" controllable="1"/>
+<event name="cmft_start" controllable="1"/>
+<event name="reset" controllable="1"/>
+<event name="timer" controllable="1"/>
+<event name="REQ_FUNC" controllable="0"/>
+<event name="REQ_STOP" controllable="0"/>
+<event name="timeout" controllable="0"/>
+</interface>
+<local>
+<alias old="CMFT_BACK.FUNC" new="CMFT_BACK"/>
+<alias old="CMFT_FRONT.FUNC" new="CMFT_FRONT"/>
+<alias old="CMFT_ROOF.FUNC" new="CMFT_ROOF"/>
+<alias old="REQ.FUNC" new="REQ_FUNC"/>
+<alias old="REQ.STOP" new="REQ_STOP"/>
+</local>
+<parts>
+<component graph="comfort" kind="spec"/>
+</parts>
+</module>

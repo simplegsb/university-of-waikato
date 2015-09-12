@@ -1,0 +1,10 @@
+net.sourceforge.waters.analysis
+net.sourceforge.waters.model.base
+net.sourceforge.waters.model.compiler
+net.sourceforge.waters.model.des
+net.sourceforge.waters.model.expr
+net.sourceforge.waters.model.module
+net.sourceforge.waters.valid
+net.sourceforge.waters.xsd.base
+net.sourceforge.waters.xsd.des
+net.sourceforge.waters.xsd.module

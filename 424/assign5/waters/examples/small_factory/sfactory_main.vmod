@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "module" "module.dtd">
+
+<module name="sfactory_main"
+        legacy="1"
+        arity="0"
+        generatorName="VALID-II"
+        generatorVersion="2.9b2"
+        version="1.0"
+        creationDate="2002-06-11 05:34:53 GMT+02:00"
+        modificationDate="2005-05-08 14:35:42 GMT+12:00">
+<interface/>
+<local>
+<event name="repair1"
+       controllable="1"
+       arity="0">
+</event>
+<event name="repair2"
+       controllable="1"
+       arity="0">
+</event>
+<event name="finish1"
+       controllable="0"
+       arity="0">
+</event>
+<event name="finish2"
+       controllable="0"
+       arity="0">
+</event>
+<event name="break1"
+       controllable="0"
+       arity="0">
+</event>
+<event name="break2"
+       controllable="0"
+       arity="0">
+</event>
+<event name="start1"
+       controllable="1"
+       arity="0">
+</event>
+<event name="start2"
+       controllable="1"
+       arity="0">
+</event>
+</local>
+<parts>
+<component graph="machine1" kind="plant"/>
+<component graph="machine2" kind="plant"/>
+<component graph="buffersup" kind="spec"/>
+<component graph="repairsup" kind="spec"/>
+</parts>
+</module>

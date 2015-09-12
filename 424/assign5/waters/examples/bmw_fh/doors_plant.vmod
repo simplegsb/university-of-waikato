@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "module" "module.dtd">
+
+<module name="doors_plant"
+        legacy="1"
+        arity="0"
+        generatorName="Dpr2Vmod"
+        generatorVersion="2.8"
+        version="1.0"
+        creationDate="2005-05-08 14:04:25 GMT+12:00"
+        modificationDate="2005-05-08 14:11:33 GMT+12:00">
+<interface>
+<event name="CLOSE" controllable="0"/>
+<event name="OPEN" controllable="0"/>
+</interface>
+<local>
+<alias old="CLOSE.DOOR" new="CLOSE"/>
+<alias old="OPEN.DOOR" new="OPEN"/>
+</local>
+<parts>
+<component graph="doors" kind="plant"/>
+</parts>
+</module>

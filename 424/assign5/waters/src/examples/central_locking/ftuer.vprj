@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project PUBLIC "project" "project.dtd">
+
+<project name="ftuer"
+         legacy="1"
+         generatorName="Dpr2Vmod"
+         generatorVersion="2.7b6"
+         version="1.0"
+         creationDate="2000-06-06 06:20:51 GMT"
+         modificationDate="2000-10-31 13:07:56 GMT">
+<uses module="ftuer_main"/>
+</project>

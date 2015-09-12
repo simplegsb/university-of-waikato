@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE graph PUBLIC "vgraph" "vgraph.dtd">
+<graph name="game_over" version="1.0" valid="1"
+	hasGeometry="1" width="164" height="289"
+	generatorName="DGE" generatorVersion="2.9b2"
+	creationDate="2004-04-15 04:29:12 GMT" modificationDate="2004-04-15 05:08:19 GMT">
+	<events>
+		<event controllable="0" name="draw"/>
+		<event controllable="0" name="winner_black_d1"/>
+		<event controllable="0" name="winner_black_d2"/>
+		<event controllable="0" name="winner_black_x.0"/>
+		<event controllable="0" name="winner_black_x.1"/>
+		<event controllable="0" name="winner_black_x.2"/>
+		<event controllable="0" name="winner_black_y.0"/>
+		<event controllable="0" name="winner_black_y.1"/>
+		<event controllable="0" name="winner_black_y.2"/>
+		<event controllable="0" name="winner_white_d1"/>
+		<event controllable="0" name="winner_white_d2"/>
+		<event controllable="0" name="winner_white_x.0"/>
+		<event controllable="0" name="winner_white_x.1"/>
+		<event controllable="0" name="winner_white_x.2"/>
+		<event controllable="0" name="winner_white_y.0"/>
+		<event controllable="0" name="winner_white_y.1"/>
+		<event controllable="0" name="winner_white_y.2"/>
+	</events>
+	<nodes>
+		<node initial="1">
+			<rendering><point x="96" y="304"/></rendering>
+			<label name="game">
+				<rendering><point x="-17" y="22"/></rendering>
+			</label>
+		</node>
+		<node marked="1">
+			<rendering><point x="224" y="304"/></rendering>
+			<label name="over">
+				<rendering><point x="-11" y="21"/></rendering>
+			</label>
+		</node>
+	</nodes>
+	<edges>
+		<edge>
+			<source name="game"/>
+			<target name="over"/>
+			<labelGroup>
+				<rendering><point x="-53" y="-245"/></rendering>
+				<label name="winner_black_d1"/>
+				<label name="winner_black_d2">
+					<rendering><point x="0" y="15"/></rendering>
+				</label>
+				<label name="winner_black_x.0">
+					<rendering><point x="0" y="30"/></rendering>
+				</label>
+				<label name="winner_black_x.1">
+					<rendering><point x="0" y="45"/></rendering>
+				</label>
+				<label name="winner_black_x.2">
+					<rendering><point x="0" y="60"/></rendering>
+				</label>
+				<label name="winner_black_y.0">
+					<rendering><point x="0" y="75"/></rendering>
+				</label>
+				<label name="winner_black_y.1">
+					<rendering><point x="0" y="90"/></rendering>
+				</label>
+				<label name="winner_black_y.2">
+					<rendering><point x="0" y="105"/></rendering>
+				</label>
+				<label name="winner_white_d1">
+					<rendering><point x="0" y="120"/></rendering>
+				</label>
+				<label name="winner_white_d2">
+					<rendering><point x="0" y="135"/></rendering>
+				</label>
+				<label name="winner_white_x.0">
+					<rendering><point x="0" y="150"/></rendering>
+				</label>
+				<label name="winner_white_x.1">
+					<rendering><point x="0" y="165"/></rendering>
+				</label>
+				<label name="winner_white_x.2">
+					<rendering><point x="0" y="180"/></rendering>
+				</label>
+				<label name="winner_white_y.0">
+					<rendering><point x="0" y="195"/></rendering>
+				</label>
+				<label name="winner_white_y.1">
+					<rendering><point x="0" y="210"/></rendering>
+				</label>
+				<label name="winner_white_y.2">
+					<rendering><point x="0" y="225"/></rendering>
+				</label>
+				<label name="draw">
+					<rendering><point x="0" y="240"/></rendering>
+				</label>
+			</labelGroup>
+		</edge>
+	</edges>
+</graph>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project PUBLIC "project" "project.dtd">
+
+<project name="safetydisplay_uncont"
+         legacy="1"
+         generatorName="VALID-II"
+         generatorVersion="2.8b1"
+         version="1.0"
+         creationDate="2001-08-07 12:52:15 GMT"
+         modificationDate="2001-06-22 07:06:52 GMT">
+<uses module="safetydisplay_uncont_main"/>
+</project>

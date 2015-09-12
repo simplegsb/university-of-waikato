@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE graph PUBLIC "vgraph" "vgraph.dtd">
+<graph name="machine2" version="1.0" valid="1"
+	hasGeometry="1" width="134" height="135"
+	generatorName="DGE" generatorVersion="2.9b2"
+	creationDate="2002-06-11 13:40:19 GMT" modificationDate="2005-05-08 02:33:48 GMT">
+	<events>
+		<event controllable="0" name="break2"/>
+		<event controllable="0" name="finish2"/>
+		<event controllable="1" name="repair2"/>
+		<event controllable="1" name="start2"/>
+	</events>
+	<nodes>
+		<node>
+			<rendering><point x="192" y="144"/></rendering>
+			<label name="D">
+				<rendering><point x="-3" y="22"/></rendering>
+			</label>
+		</node>
+		<node>
+			<rendering><point x="96" y="144"/></rendering>
+			<label name="W">
+				<rendering><point x="-5" y="22"/></rendering>
+			</label>
+		</node>
+		<node initial="1" marked="1">
+			<rendering><point x="144" y="64"/></rendering>
+			<label name="I">
+				<rendering><point x="-1" y="-13"/></rendering>
+			</label>
+		</node>
+	</nodes>
+	<edges>
+		<edge>
+			<source name="D"/>
+			<target name="I"/>
+			<labelGroup>
+				<rendering><point x="4" y="2"/></rendering>
+				<label name="repair2"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="119" y="105"/></rendering>
+			<source name="I"/>
+			<target name="W"/>
+			<labelGroup>
+				<rendering><point x="5" y="6"/></rendering>
+				<label name="start2"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<source name="W"/>
+			<target name="D"/>
+			<labelGroup>
+				<rendering><point x="-10" y="-2"/></rendering>
+				<label name="break2"/>
+			</labelGroup>
+		</edge>
+		<edge>
+			<rendering><point x="105" y="94"/></rendering>
+			<source name="W"/>
+			<target name="I"/>
+			<labelGroup>
+				<rendering><point x="-14" y="3"/></rendering>
+				<label name="finish2"/>
+			</labelGroup>
+		</edge>
+	</edges>
+</graph>
