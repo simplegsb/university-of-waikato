@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- A simple project file to run the bean builder -->
+<project name="bean-builder" default="run" basedir=".">
+
+  <!-- use "env" as a prefix for enviroment variables -->
+  <property environment="env"/>
+  <property name="file.dt.jar" location="${env.JAVA_HOME}/lib/dt.jar"/>
+
+  <!-- Setup the classpath - all the files in the lib directory -->
+  <path id="path.classpath">
+    <pathelement location="beanbuilder-0_6-alpha.jar"/>
+    <pathelement location="${file.dt.jar}"/>
+    <fileset dir="lib" includes="**/*.jar"/>
+  </path>
+
+  <!-- Execute the jdnc file -->
+  <target name="run" 
+    description="Executes the jdnc file specified with -Djdnc.file=[filename]">
+    <java classname="org.jdesktop.bb.Main" fork="true">
+      <classpath>
+	<path refid="path.classpath"/>
+      </classpath>
+    </java>
+  </target>
+
+</project>
