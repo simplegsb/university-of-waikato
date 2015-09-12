@@ -11,6 +11,8 @@ import java.util.ArrayList;
  */
 public class ChatServer
 {
+    private static ArrayList allConnectionSockets = new ArrayList();
+
     /**
      * Creates a passive TCP socket and waits for client processes to connect to it.
      * 
@@ -30,6 +32,8 @@ public class ChatServer
             while (true)
             {
                 Socket connectionSocket = welcomeSocket.accept();
+                ChatSession session = new ChatSession(connectionSocket, allConnectionSockets);
+                session.start();
             }
         }
         catch (IOException e)
