@@ -1,15 +1,16 @@
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import javax.swing.border.*;
+import javax.swing.JFrame;
 
+/**
+ * THIS CLASS IS BASED ON THE CLASS OF THE SAME NAME PROVIDED ON THE COURSE WEBSITE.
+ * 
+ * An application that holds both the graphics and text menu components of the Bezier Surface Viewer.
+ * 
+ * @author gb21
+ */
 public class BezSurfApp extends JApplet
 {
-    public static void main(String s[])
+    public static void main(String args[])
     {
-        BezSurfApp bezSurfApp = new BezSurfApp();
-        bezSurfApp.init();
-
         JFrame frame = new JFrame("Bezier Surface Viewer");
         frame.addWindowListener(new WindowAdapter()
         {
@@ -19,32 +20,55 @@ public class BezSurfApp extends JApplet
             }
         });
 
-        frame.getContentPane().add("Center", bezSurfApp);
+        frame.getContentPane().add("Center", new BezSurfApp());
         frame.pack();
         frame.setResizable(false);
-
         frame.setVisible(true);
     }
+    
+    /**
+     * The size of the x dimension of the application frame.
+     */
+    private final int frameXDim = 640;
 
-    final int FrameXDim_ = 640;
+    /**
+     * The size of the y dimension of the application frame.
+     */
+    private final int frameYDim = 540;
 
-    final int FrameYDim_ = 540;
+    /**
+     * The size of the x dimension of the graphics component.
+     */
+    private final int graphicsXDim = frameXDim;
 
-    final int GraphicsXDim_ = FrameXDim_;
+    /**
+     * The size of the y dimension of the graphics component.
+     */
+    private final int graphicsYDim = 340;
 
-    final int GraphicsYDim_ = 340;
+    /**
+     * The size of the x dimension of the text menu component.
+     */
+    private final int textMenuXDim = frameXDim;
 
-    final int TextMenuXDim_ = FrameXDim_;
+    /**
+     * The size of the y dimension of the text menu component.
+     */
+    private final int textMenuYDim = (frameYDim - graphicsYDim);
 
-    final int TextMenuYDim_ = (FrameYDim_ - GraphicsYDim_);
-
-    public void init()
+    /**
+     * Creates an instance of BezSurfApp.
+     * 
+     * Adds the graphics and text menu components.
+     */
+    public BezSurfApp()
     {
-        BezSurfGraphics graphics = new BezSurfGraphics(GraphicsXDim_, GraphicsYDim_);
+        BezSurfGraphics graphics = new BezSurfGraphics(graphicsXDim, graphicsYDim);
 
-        BezSurfTextMenu textmenu = new BezSurfTextMenu(TextMenuXDim_, TextMenuYDim_, graphics);
+        BezSurfTextMenu textmenu = new BezSurfTextMenu(textMenuXDim, textMenuYDim, graphics);
 
         getContentPane().add(graphics);
         getContentPane().add("South", textmenu);
     }
 }
+
